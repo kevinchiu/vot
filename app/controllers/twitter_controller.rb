@@ -1,4 +1,3 @@
-
 class TwitterController < ApplicationController
   def post
     require 'twitter'
