@@ -11,3 +11,4 @@ role :db, "visionontap.com", :primary => true
 
 ssh_options[:forward_agent] = true
 set :branch, "master"
+set :user, "kevin"
