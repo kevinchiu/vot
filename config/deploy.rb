@@ -4,6 +4,7 @@ default_run_options[:pty] = true
 set :repository,  "git@github.com:kevinchiu/vot.git"
 set :scm, :git
 set :deploy_to, "/home/kevin/public_html"
+set :deploy_via, :remote_cache
 
 role :app, "visionontap.com"
 role :web, "visionontap.com"

@@ -68,6 +68,15 @@
 			
 			<div class="span-8">
 				<div class="span-8 medium last">
+					Demo
+				</div>
+				<div class="span-8 last">
+					Try <a href="/static/spot.html">Spot Watcher</a>. It watches a spot for movement, and then sends you an alert as an audio ping, SMS, email, or Twitter message.
+				</div>
+			</div>
+			
+			<div class="span-8">
+				<div class="span-8 medium last">
 					Alpha
 				</div>
 				<div class="span-8 last">
@@ -80,7 +89,13 @@
 					Updates
 				</div>
 				<div class="span-8 last">
-					We'll hook up a Twitter feed here.
+					<div id="twitter_div">
+					<h2 style="display: none;" >Twitter Updates</h2>
+					<ul id="twitter_update_list"></ul>
+					<a href="http://twitter.com/vision_on_tap" id="twitter-link" style="display:block;text-align:right;">follow me on Twitter</a>
+					</div>
+					<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+					<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/vision_on_tap.json?callback=twitterCallback2&amp;count=5"></script>
 				</div>
 			</div>
 			
@@ -90,9 +105,21 @@
 			
 			<hr>
 			
+			
+			<div class="alt span-8 left">
+				<a href="/vot.pdf">See the presentation</a>
+			</div>
+			<div class=" alt footer span-16 last right">
+				<a href="http://kevinchiu.org">Kevin Chiu</a><br>
+				<a href="http://raskar.info">Ramesh Raskar</a><br>
+				<a href="http://media.mit.edu">MIT Media Lab</a>
+			</div>
+			
 			<div class="footer"> 
+				<!--
 				<a href="http://visionontap.com/privacy">Privacy</a> | 
 				<a href="http://visionontap.com/about">Contact</a>
+			-->
 			</div>
 		</div>
 		<!-- <div class="container">
