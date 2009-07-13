@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
               :to           => /.*/,
               :subject      => /.*/,
               :body         => /.*/
+  map.root :controller => 'front'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
