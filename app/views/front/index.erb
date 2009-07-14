@@ -71,7 +71,7 @@
 					Demo
 				</div>
 				<div class="span-8 last">
-					Try <a href="/static/spot.html">Spot Watcher</a>. It watches a spot for movement, and then sends you an alert as an audio ping, SMS, email, or Twitter message.
+					Try <a href="/spot.html">Spot Watcher</a>. It watches a spot for movement, and then sends you an alert as an audio ping, SMS, email, or Twitter message.
 				</div>
 			</div>
 			
@@ -89,13 +89,7 @@
 					Updates
 				</div>
 				<div class="span-8 last">
-					<div id="twitter_div">
-					<h2 style="display: none;" >Twitter Updates</h2>
-					<ul id="twitter_update_list"></ul>
-					<a href="http://twitter.com/vision_on_tap" id="twitter-link" style="display:block;text-align:right;">follow me on Twitter</a>
-					</div>
-					<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-					<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/vision_on_tap.json?callback=twitterCallback2&amp;count=5"></script>
+					<%= twitter %>
 				</div>
 			</div>
 			
@@ -114,43 +108,7 @@
 				<a href="http://raskar.info">Ramesh Raskar</a><br>
 				<a href="http://media.mit.edu">MIT Media Lab</a>
 			</div>
-			
-			<div class="footer"> 
-				<!--
-				<a href="http://visionontap.com/privacy">Privacy</a> | 
-				<a href="http://visionontap.com/about">Contact</a>
-			-->
-			</div>
-		</div>
-		<!-- <div class="container">
-					<div class="prepend-top"></div>
-					<div class="statement title">Vision on Tap</div>
-					<hr>
-					<div class="append-bottom"></div>
-					<div class="center">
-					<img src="/images/cam1.jpg" alt="webcam">
-					<a href="example"><img src="/images/cam2.jpg" alt="button"></a>
-					</div>
-					<div class="center span-24 last alt">
-						( Attached camera required )
-					</div>
-					<hr>
-					<div class="alt span-8 left">
-						<a href="/vot.pdf">See the presentation</a>
-					</div>
-					<div class="span-8 center">
-						<b>Images captured from your machine are not saved.</b>
-					</div>
-					<div class=" alt footer span-8 last right">
-						<a href="http://kevinchiu.org">Kevin Chiu</a><br>
-						<a href="http://raskar.info">Ramesh Raskar</a><br>
-						<a href="http://media.mit.edu">MIT Media Lab</a>
-					</div>
-					
-					<div class="append-bottom">
-
-					</div>
-				</div> -->
-	
+			<%= google_analytics %>
+			<%= getsatisfaction %>
 	</body>
 </html>
