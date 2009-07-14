@@ -13,18 +13,6 @@ module ApplicationHelper
     eos
   end
   
-  def twitter
-    <<-eos
-      <div id="twitter_div">
-		  <h2 style="display: none;" >Twitter Updates</h2>
-		  <ul id="twitter_update_list"></ul>
-		  <a href="http://twitter.com/vision_on_tap" id="twitter-link" style="display:block;text-align:right;">follow me on Twitter</a>
-		  </div>
-		  <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-		  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/vision_on_tap.json?callback=twitterCallback2&amp;count=5"></script>
-		eos
-  end
-  
   def getsatisfaction
     <<-eos
       <script type="text/javascript" charset="utf-8">
@@ -41,9 +29,6 @@ module ApplicationHelper
         feedback_widget_options.placement = "right";
         feedback_widget_options.color = "#222";
         feedback_widget_options.style = "idea";
-
-
-
 
         var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
       </script>
