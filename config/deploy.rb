@@ -13,3 +13,10 @@ role :db, "visionontap.com", :primary => true
 ssh_options[:forward_agent] = true
 set :branch, "master"
 set :use_sudo, false
+
+<<-eos
+  Server names:
+  Hermes
+  Ebisu
+  Daikokuten
+eos
