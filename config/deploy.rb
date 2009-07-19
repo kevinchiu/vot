@@ -8,7 +8,7 @@ set :deploy_via, :remote_cache
 
 role :app, "visionontap.com"
 role :web, "visionontap.com"
-role :db, "visionontap.com", :primary => true
+role :db, "10.176.68.176", :primary => true
 
 ssh_options[:forward_agent] = true
 set :branch, "master"
