@@ -6,9 +6,9 @@ set :scm, :git
 set :deploy_to, "/home/kevin/public_html"
 set :deploy_via, :remote_cache
 
-role :app, "visionontap.com"
+role :app, "visionontap.com", :primary => true
 role :web, "visionontap.com"
-role :db, "10.176.68.176", :primary => true
+#role :db, "174.143.253.43"
 
 ssh_options[:forward_agent] = true
 set :branch, "master"
