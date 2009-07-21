@@ -1,9 +1,20 @@
 
+
+<div class="span-12 last">
+	<div class="medium">
+		Sign up for the Alpha Test!
+	</div>
+	We promise to keep your information private.
+</div>
+
+
+<div class="span-5 last">
+	
 <% form_for :person, @person, :url => { :action => "create" } do |f| %>
-	<div>
 	<div>Name:</div><div><%= f.text_field :name %></div>
 	<div>Email:</div><div><%= f.text_field :email_address %></div>
-	</div>
 	
 	<div><%= submit_tag 'Submit'%></div>
 <% end %>
+
+</div>
