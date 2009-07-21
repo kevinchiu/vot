@@ -1,6 +1,4 @@
-#center_image{
-	margin-top:50px;
-}
+
 
 .large {
 	font-weight: bold;
@@ -22,26 +20,6 @@
 	text-align:center;
 }
 
-.blue {
-	background-color:#00F;
-}
-
-.red {
-	background-color:#F00;
-}
-
-.green {
-	background-color:#0F0;
-}
-
-.grey {
-	background-color:#aaa;
-}
-
-.white {
-	background-color:#fff;
-}
-
 .transparent {
 	filter:alpha(opacity=50);
 	-moz-opacity:0.5;
@@ -54,11 +32,6 @@
   font-family:Georgia, serif;
   font-style:italic;
   margin:.5em 0 1.5em 0;
-}
-
-#circles {
-	background-image: url("/images/circles.png");
-	height:380px;
 }
 
 .footer {
@@ -97,6 +70,7 @@ h3 h3 {
 a {
 	text-decoration:underline;
 	color:black;
+	font-weight:bold;
 }
 
 .example-image {

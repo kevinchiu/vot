@@ -1,5 +1,8 @@
 class FrontController < ApplicationController
+  layout 'standard'
+  
   def index
-    "hi"
+    
   end
+  
 end

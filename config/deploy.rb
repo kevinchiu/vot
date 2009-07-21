@@ -6,17 +6,18 @@ set :scm, :git
 set :deploy_to, "/home/kevin/public_html"
 set :deploy_via, :remote_cache
 
-role :app, "visionontap.com", :primary => true
-role :web, "visionontap.com"
-#role :db, "174.143.253.43"
+set :gateway, "67.23.35.68"
+
+role :app, "67.23.35.68"
+role :web, "67.23.35.68"
+role :db, "67.23.35.68", :primary => true
 
 ssh_options[:forward_agent] = true
 set :branch, "master"
 set :use_sudo, false
 
 <<-eos
-  Server names:
-  Hermes
-  Ebisu
-  Daikokuten
+  Server IPs:
+  67.23.35.68 - app
+  10.176.68.176 - db
 eos

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<%= javascript_include_tag "prototype" %>
+		<%= javascript_include_tag "effects" %>
+		<%= stylesheet_link_tag "/static/blueprint/screen.css" %>
+		<%= stylesheet_link_tag "/static/blueprint/print.css", :media => "print" %>
+		<!--[if IE]>
+			<%= stylesheet_link_tag "/static/blueprint/ie.css", :media => "screen, projection" %>
+		<![endif]-->
+		<%= stylesheet_link_tag "/static/custom.css" %>
+		<%= stylesheet_link_tag "error" %>
+		<%= stylesheet_link_tag "notice" %>
+		<%= yield :stylesheets %>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Vision on Tap
+		</title>
+		<meta name="generator" content="TextMate http://macromates.com/">
+		<meta name="author" content="kevin"><!-- Date: 2009-04-05 -->
+		<!-- <meta http-equiv="REFRESH" content="0;url=http://distributedcameras2.appspot.com"> -->
+	</head>
+	<body>
+		<div class="container">
+			<div class="prepend-top"></div>
+			<div class="title large">
+				Vision on Tap
+			</div>
+			
+			<div class="alt small">
+				Disclaimer: We're undergoing heavy construction.
+			</div>
+			<hr>
+			<div class="span-24 last">
+				<p id="flash_notice"><%= flash[:notice] %></p>
+			</div>
+			<%= yield -%>
+			<div class="append-bottom">
+			</div>
+			<hr>
+			<div class=" alt footer span-24 right">
+				<a href="http://kevinchiu.org">Kevin Chiu</a><br>
+				<a href="http://raskar.info">Ramesh Raskar</a><br>
+				<a href="http://media.mit.edu">MIT Media Lab</a>
+			</div>
+			<%= google_analytics %>
+			<%= getsatisfaction %>
+		</div>
+	</body>
+</html>
