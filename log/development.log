@@ -1,1 +1,7 @@
 
+
+
+Processing FrontController#index (for 127.0.0.1 at 2009-08-18 12:19:45) [GET]
+Rendering template within layouts/standard
+Rendering front/index
+Completed in 117ms (View: 116, DB: 0) | 200 OK [http://localhost/]
