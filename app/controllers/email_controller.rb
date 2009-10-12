@@ -8,8 +8,10 @@ class EmailController < ApplicationController
       attachment = params[:data]
       attachment_type = "image/jpeg"
       Notifier.deliver_email(to, subject, body, attachment, attachment_type)
+    else
+      Notifier.deliver_email(to, subject, body)
     end
     
-    Notifier.deliver_email(to, subject, body)
+    
   end
 end
