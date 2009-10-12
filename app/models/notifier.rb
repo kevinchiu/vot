@@ -10,7 +10,7 @@ class Notifier < ActionMailer::Base
     body        message
   end
   
-  def email(email, subject, message, attachment_data, attachment_type)
+  def email_with_attachment(email, subject, message, attachment_data, attachment_type)
     recipients  email
     from        "noreply@visionontap.com"
     subject     subject
