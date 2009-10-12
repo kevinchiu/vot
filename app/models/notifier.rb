@@ -1,15 +1,11 @@
 class Notifier < ActionMailer::Base
   
-  def email(email, subject, message, attachment, attachment_type)
+  def email(email, subject, message, attachment_data, attachment_type)
     recipients  email
     from        "noreply@visionontap.com"
     subject     subject
     body        message
-    if(attachment)
-      attachment  :content_type => attachment_type,
-                  :body => attachment
-    end
-    
+    attachment :content_type => attachment_type, :body => attachment_data
   end
 
 end
