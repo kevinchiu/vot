@@ -1,4 +1,7 @@
 class Notifier < ActionMailer::Base
+  class Mime::Type
+    delegate :split, :to => :to_s
+  end
   
   def email(email, subject, message, attachment_data, attachment_type)
     recipients  email
