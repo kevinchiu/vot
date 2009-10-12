@@ -4,10 +4,8 @@ class EmailController < ApplicationController
     subject = params[:subject]
     body = params[:body]
     
-    if(params[:data])
-      attachment = params[:data]
-      attachment_type = "image/jpeg"
-      Notifier.deliver_email_with_attachment(to, subject, body, attachment, attachment_type)
+    if(attachment = request.body.read)
+      Notifier.deliver_email_with_attachment(to, subject, body, attachment, "image/jpeg")
     else
       Notifier.deliver_email(to, subject, body)
     end
